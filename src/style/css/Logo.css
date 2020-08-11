@@ -1,0 +1,29 @@
+
+.picDiv {
+	display: flex;
+	justify-content: center;
+	width: 98vw;
+}
+
+.Tilt {
+	border: 1px none black;
+	margin-left: 3rem;
+	background: linear-gradient(to left, #00c6ab);
+	/*box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3);*/
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.Tilt-inner {
+		animation: spinningIcon 20s infinite linear;
+	}
+}
+
+@keyframes spinningIcon {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}

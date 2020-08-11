@@ -1,0 +1,95 @@
+
+
+.WrapCard {
+	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
+	width: 30vw;
+	padding: 1.5rem 1rem 2rem 1rem;
+	display: block;
+	font-weight: bold;
+	top: 20%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.fs {
+	border: 0px solid transparent;
+	width: 65%;
+	margin: 0 auto;
+	letter-spacing: 0.1rem;
+}
+
+.lh {
+	line-height: 1.2;
+}
+
+.db {
+	display: block;
+}
+
+.w-100 {
+	width: 100%;
+}
+
+.mv {
+	margin-top: 3rem;
+}
+
+.mv-less {
+	margin-top: 1.5rem;
+}
+
+.text-field {
+	height: 3rem;
+	background-color: transparent;
+	border: 1px solid black;
+}
+
+.text-field:focus {
+	outline: none;
+	caret-color: white;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.submit-btn {
+	background-color: transparent;
+	color: black;
+	width: 35%;
+	height: 3rem;
+	border: 1px solid black;
+	transition: all .5s;
+	outline: none;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.submit-btn:hover {
+  color: white;
+  background-color: black;
+  transform: scale(1.1);
+  border-radius: 10px 10px;
+}
+
+.submit-btn:active:focus  {
+  transform: scale(1.2);
+}
+
+/* scale won't working with in-line element, need to using display: block to make 
+ it work. */
+#register {
+	display: block;
+	color: black;
+	text-decoration: none;
+	transition: all .2s;
+	cursor: pointer;
+}
+
+.register-btn {
+	transition: all .3s;
+}
+
+#register:hover {
+	transform: scale(1.2);
+}
+
+
+

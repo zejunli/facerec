@@ -1,0 +1,48 @@
+@import '_base';
+
+/* description style */
+.desc {
+	font-size: 1.5rem;
+	font-weight: bold;
+	font-height: 1.5;
+}
+
+// wraps button(Detect) and input text field.
+.formwrapper {
+	width: 35vw;
+}
+
+
+/* input form style */
+.inputForm {
+	width: 70%;
+	height: 3rem;
+	caret-color: $primary-color;
+	border: none;
+}
+
+/* detect-button style */
+.Detect {
+	color: white;
+	height: 3rem;
+	width: 20%;
+	background-color: $secondary-color;
+	border: none;
+	margin-left: 0.5rem;
+	transition: transform .5s;
+}
+
+/* style on hovering on button Detect */
+.Detect:hover {
+	color: white;
+	background-color: $primary-color;
+	animation: hvr-back-pulse 2s infinite;
+	transform: scale(1.1);
+}
+
+/* pulse animation on button Detect */
+@keyframes hvr-back-pulse {
+  50% {
+    background-color: $third-color;
+  }
+}

@@ -1,0 +1,17 @@
+/* needs four of them to be 100% height to full-screen the background animation,
+   losing any one of them could lead to being not full-screen */
+body, html, #root, .App {
+  height: 100%;
+  text-align: center;
+}
+
+/* using !important to override in-line style position: absolute */
+.vanta-canvas {
+  position: fixed !important;
+  z-index: -1 !important;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
