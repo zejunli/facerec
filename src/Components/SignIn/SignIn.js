@@ -82,7 +82,6 @@ class SignIn extends Component {
 			this.changeText('Email is required', '#signin-mail');
 		}
 		else if (!this.isValidEmail()) {
-			console.log('entered');
 			this.changeText('invalid email', '#signin-mail');
 		}
 		else if (this.isPasswordEmpty()) {

@@ -41,7 +41,7 @@ class Hello extends React.Component {
 		for (let i = 0; i < textArr.length; ++ i) {
 			this.helloElement.innerHTML += `<span>${textArr[i]}</span>`
 		}
-		// calls onTick every 50 mili-secs, with the index passing into it.
+		// calls onTick every 50 mili-secs.
 		this.timer = setInterval(this.onTick, 50);
 	}
 
