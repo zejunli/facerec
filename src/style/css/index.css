@@ -7,12 +7,19 @@ body {
 	 sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	background: linear-gradient(to right, #E80066, #FFA400, #00c6ab);
+	/*background: linear-gradient(to right, #E80066, #FFA400, #00c6ab);*/
 	font-family: 'Comfortaa', cursive;
- 	letter-spacing: .05rem
+ 	letter-spacing: .05rem;
+ 	
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+::selection {
+	background-color: black;
+	color: white;
 }

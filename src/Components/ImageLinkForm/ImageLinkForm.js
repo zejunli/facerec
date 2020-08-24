@@ -7,7 +7,7 @@ const ImageLinkForm = ({ onInputChange, onSubmit }) => {
 				<p className="desc">Detect faces in your pictures</p>
 				<div className="center">
 					<div className="formwrapper center">
-						<input type='text' className="inputForm" onChange={onInputChange}/>
+						<input placeHolder='https://randomimagelink.jpg' type='text' className="inputForm" onChange={onInputChange}/>
 						<button className="Detect" onClick={onSubmit}>Detect</button>
 					</div>
 				</div>

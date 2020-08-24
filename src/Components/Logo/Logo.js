@@ -8,7 +8,7 @@ import Tilt from 'react-tilt';
 const Logo = () => {
 	return (
 			<div className="picDiv">
-				<Tilt className="Tilt" options={{ max : 60 }} style={{ height: 250, width: 250 }} >
+				<Tilt className="Tilt" options={{ max : 60 }} style={{ height: 200, width: 200 }} >
  					<div className="Tilt-inner"><img src={brain} alt="brain logo" /></div>
 				</Tilt>
 			</div>

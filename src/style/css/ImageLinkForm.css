@@ -23,7 +23,7 @@
 /* input form style */
 .inputForm {
   width: 70%;
-  height: 3rem;
+  height: 2.8rem;
   caret-color: white;
   border: none;
   background-color: transparent;
@@ -38,10 +38,14 @@
   background-color: rgba(0, 0, 0, 0.1);
 }
 
+.inputForm::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 /* detect-button style */
 .Detect {
   color: black;
-  height: 3rem;
+  height: 2.8rem;
   width: 20%;
   background-color: transparent;
   border: 1px solid black;
@@ -52,15 +56,53 @@
 
 /* style on hovering on button Detect */
 .Detect:hover {
-  color: white;
-  background-color: black;
-  /*animation: hvr-back-pulse 2s infinite;*/
-  transform: scale(1.1);
+  transform: scale(1.08);
   border-radius: 10px 10px;
 }
 
 .Detect:active:focus  {
   transform: scale(1.2);
+}
+
+@media only screen and (max-width: 600px) {
+  .Detect {
+    font-size: 0.6em;
+    width: 10%;
+  }
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    .rank {
+      font-size: 1em !important;
+    }
+    .rank-num {
+      font-size: 1.5em !important;
+    }
+    .desc {
+      font-size: 1em;
+    }
+    .formwrapper {
+      width: 100vw;
+    }
+    .inputForm {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      width: 80%;
+      height: 2.1rem;
+      border-radius: 0;
+    }
+    .Detect {
+      height: 2.1rem;
+      width: 23%;
+    }
+    
 }
 
 /* pulse animation on button Detect */
