@@ -93,7 +93,7 @@ class SignIn extends Component {
 	onSubmitSignIn = () => {
 		// checks the validation of email and password
 		if (this.isValidEmail() && !this.isPasswordEmpty()) {
-			fetch("http://10.0.0.178:8200/signin", {
+			fetch("https://smart-brain-zejun.herokuapp.com/signin", {
 				method: 'post',
 				headers: {'Content-Type': 'application/json'},
 				body: JSON.stringify({

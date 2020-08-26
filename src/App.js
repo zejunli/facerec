@@ -10,6 +10,7 @@ import Rank from './Components/Rank/Rank';
 import Hello from './Components/Hello/Hello';
 import * as THREE from 'three';
 import WAVES from './vanta.waves.min.js';
+// import RINGS from './vanta.rings.min.js'
 
 const initState = {
   input: '',
@@ -90,7 +91,7 @@ class App extends Component {
 
   onSubmit = () => {
     this.setState({ imgURL: this.state.input });
-    fetch('http://10.0.0.178:8200/apicall', {
+    fetch('https://smart-brain-zejun.herokuapp.com/apicall', {
           method: 'post',
           headers: {'Content-Type': 'application/json'},
           body: JSON.stringify({
@@ -101,7 +102,7 @@ class App extends Component {
     .then(response => {
       if (response) {
         // dev -- supporting multiple face rec
-        fetch('http://localhost:8200/image', {
+        fetch('https://smart-brain-zejun.herokuapp.com/image', {
           method: 'put',
           headers: {'Content-Type': 'application/json'},
           body: JSON.stringify({
@@ -130,7 +131,7 @@ class App extends Component {
     this.vantaEffect = WAVES({
       el: this.vantaRef.current,
       THREE: THREE,
-      color: 0x147F64,
+      color: 0x4F6441,
       waveHeight: 30,
       shininess: 0,
       waveSpeed: 0.6,

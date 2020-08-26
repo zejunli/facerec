@@ -164,7 +164,7 @@ class Register extends Component {
 			&& this.isEqualEmail()
 			&& this.isEqualPassword()
 			&& this.isPasswordLongEnough()) {
-				fetch('http://localhost:8200/register', {
+				fetch('https://smart-brain-zejun.herokuapp.com/register', {
 					method: 'post',
 					headers: {'Content-Type': 'application/json'},
 					body: JSON.stringify({
@@ -176,7 +176,7 @@ class Register extends Component {
 				.then(resp => resp.json())
 				// returning 'transaction failed' -> repetitive email address.
 				.then(data => {
-					if (typeof data === 'string') {
+					if (data === 'unable to register') {
 						this.changeText('Email already registered', '#mail');
 					}
 					else {

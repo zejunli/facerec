@@ -2,7 +2,7 @@ import React from 'react';
 
 
 
-const Rank = ({ name, entry }) => {
+const Rank = ({ name, entry}) => {
 	return (
 			<div>
 				<div className="f3 rank">
