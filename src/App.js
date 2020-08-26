@@ -131,7 +131,7 @@ class App extends Component {
     this.vantaEffect = WAVES({
       el: this.vantaRef.current,
       THREE: THREE,
-      color: 0x4F6441,
+      color: 0x12674D,
       waveHeight: 30,
       shininess: 0,
       waveSpeed: 0.6,
