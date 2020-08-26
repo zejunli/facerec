@@ -9,9 +9,8 @@ import Register from './Components/Register/Register';
 import Rank from './Components/Rank/Rank';
 import Hello from './Components/Hello/Hello';
 import * as THREE from 'three';
-// import WAVES from './vanta.waves.min.js';
 import WAVES from 'vanta/src/vanta.waves.js';
-// import RINGS from './vanta.rings.min.js'
+
 
 const initState = {
   input: '',
